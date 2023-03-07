@@ -11,16 +11,11 @@
             <!-- container -->
             <div class="container gx-4">
               <!-- Logo -->
-              <a class="navbar-brand" href="index.html" title="C-PLUS">
-                <div class="transparent" alt="C-PLUS">
-                  <h4 class="font-weight-900" style="color: black">
-                    Crawling Plus
-                  </h4>
-                </div>
+              <router-link class="navbar-brand" :to="{ name: 'AboutMe' }">
                 <div class="normal" alt="C-PLUS" style="color: black">
                   <h4 class="font-weight-900">Crawling Plus</h4>
                 </div>
-              </a>
+              </router-link>
               <!-- /End Logo -->
 
               <!-- Toggler button -->
@@ -46,10 +41,9 @@
                 <ul class="navbar-nav ms-auto">
                   <!-- Home -->
                   <li class="nav-item">
-                    <!-- <router-link class="nav-link" :to="{ name: 'ClientMain' }"
-                      ><span>HOME</span></router-link
-                    > -->
-                    <span> ABOUT ME </span>
+                    <router-link class="nav-link" :to="{ name: 'AboutMe' }"
+                      ><span>ABOUT ME</span></router-link
+                    >
                   </li>
                   <!-- Portfolio -->
                   <li class="nav-item">
@@ -59,9 +53,9 @@
                   </li>
 
                   <!-- Shop -->
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <span> CRAWLING </span>
-                  </li>
+                  </li> -->
                 </ul>
                 <!-- /End Header menu links -->
               </div>
